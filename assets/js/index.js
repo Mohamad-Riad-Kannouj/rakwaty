@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/data")
+fetch("https://rakwaty.herokuapp.com/data")
   .then(response => response.json())
   .then(data => {
     let hot_drinks = document.getElementById("hot_drinks");
