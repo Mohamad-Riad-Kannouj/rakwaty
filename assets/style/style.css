@@ -28,9 +28,6 @@ body {
         font-weight: 500;
     }
 }
-.main .container {
-    width: 90%;
-}
 .title {
     color: #E7EAEF;
     text-align: center;
@@ -38,8 +35,17 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 @media (max-width: 992px) {
+    .nav_item {
+        margin-right: 10px;
+    }
     .title {
         margin: 35px 0;
+    }
+    h3 {
+       margin-top: 15px; 
+    }
+    h3:first-of-type {
+        margin-top: 0;
     }
 }
 h3 {
