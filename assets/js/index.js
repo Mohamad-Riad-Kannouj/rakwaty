@@ -124,23 +124,28 @@ fetch("https://rakwaty.herokuapp.com/data")
       smoothies.appendChild(component);
     });
     let ground_coffee = document.getElementById("ground_coffee");
-    data.ground_coffee.forEach(e => {
-      let component = document.createElement("div");
-      component.classList.add(
-        "component",
-        "d-flex",
-        "justify-content-start",
-        "align-content-center"
-      );
-      let item = document.createElement("p");
-      item.classList.add("item", "text-nowrap");
-      let dots = document.createElement("p");
-      dots.classList.add("dots");
-      let price = document.createElement("p");
-      price.classList.add("price");
-      item.innerHTML = e.item;
-      price.innerHTML = e.price + '<span class="curr">.000</span>';
-      component.append(item, dots, price);
-      ground_coffee.appendChild(component);
+    data.ground_coffee.forEach((e,i,array) => {
+      if (i !== array.length -1) {
+        let component = document.createElement("div");
+        component.classList.add(
+          "component",
+          "d-flex",
+          "justify-content-start",
+          "align-content-center"
+        );
+        let item = document.createElement("p");
+        item.classList.add("item", "text-nowrap");
+        let dots = document.createElement("p");
+        dots.classList.add("dots");
+        let price = document.createElement("p");
+        price.classList.add("price");
+        item.innerHTML = e.item;
+        price.innerHTML = e.price + '<span class="curr">.000</span>';
+        component.append(item, dots, price);
+        ground_coffee.appendChild(component);
+      } else {
+        let nuts = document.getElementsByClassName('nuts')[0];
+        nuts.lastElementChild.innerHTML = e.price + '<span class="curr">.000</span>'
+      }
     });
   });
