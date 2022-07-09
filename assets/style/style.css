@@ -81,6 +81,22 @@ h3 {
 .curr {
     font-size: 1rem;
 }
+@media (max-width: 992px) {
+    .nuts h3    {
+        margin: 0 0 16px;
+        padding-right: 20px;
+    }
+}
+@media (min-width: 992px) {
+    .nuts {
+        padding: 20px;
+        border: 1px solid #d8ac63;
+        border-radius: 25px;
+    }
+    .nuts h3    {
+        padding-right: 20px;
+    }
+}
 @media (min-width: 992px) {
     #ice_coffee,
     #ice_tea,
@@ -94,15 +110,7 @@ h3 {
         border-right: 1px solid #d8ac63;
     }
 }
-.nuts {
-    padding: 20px;
-    border: 1px solid #d8ac63;
-    border-radius: 25px;
-}
-.nuts h3    {
-    margin: 0;
-    padding-right: 20px;
-}
+
 footer {
     font-size: 15px;
     text-align: center;
