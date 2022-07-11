@@ -34,7 +34,7 @@ body {
     margin: 45px 0;
     font-family: 'Dancing Script', cursive;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .nav_item {
         margin-right: 10px;
     }
@@ -44,9 +44,16 @@ body {
     h3 {
        margin-top: 15px; 
     }
+}
+@media (max-width: 991px) {
     #hot_drinks h3 {
         margin-top: 0;
-    }
+    }   
+}
+@media (min-width: 1200px) {
+    #hot_drinks h3 {
+        margin-top: 0;
+    }   
 }
 h3 {
     font-family: 'Gentium Book Plus', serif;
@@ -81,19 +88,19 @@ h3 {
 .curr {
     font-size: 1rem;
 }
-@media (max-width: 992px) {
-    .nuts h3    {
+@media (max-width: 991px) {
+    #nuts_candy h3    {
         margin: 0 0 16px;
         padding-right: 20px;
     }
 }
 @media (min-width: 992px) {
-    .nuts {
-        padding: 20px;
+    #nuts_candy {
+        padding: 30px;
         border: 1px solid #d8ac63;
         border-radius: 25px;
     }
-    .nuts h3    {
+    #nuts_candy h3    {
         padding-right: 20px;
     }
 }
